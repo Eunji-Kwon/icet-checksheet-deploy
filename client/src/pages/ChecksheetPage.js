@@ -27,7 +27,7 @@ const ChecksheetPage = () => {
         // }
 
         const fetchData = async () => {
-            const response = await fetch('api/checksheet', {
+            const response = await fetch('/api/checksheet', {
                 headers: {
                     'Content-Type': 'application/json',
                 },
