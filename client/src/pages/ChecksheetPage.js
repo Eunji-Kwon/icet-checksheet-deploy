@@ -298,7 +298,12 @@ const ChecksheetPage = () => {
                             if (!socket.connected) {
                                 socket.connect();
                             }
-                            const response = await fetch('api/checksheet/create', { method: 'POST' });
+                            const response = await fetch('api/checksheet/create', {
+                                 method: 'POST',
+                                 headers: {
+                                    'Content-Type': 'application/json',
+                       },
+                     });
                             if (!response.ok) {
                                 const errorData = await response.json();
                                 throw new Error(errorData.message || 'Network response was not ok');

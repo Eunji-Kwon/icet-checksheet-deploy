@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+
 import Header from './partials/Header';
 import Footer from './partials/Footer';
 
@@ -20,7 +21,8 @@ function App() {
           <Route path="/history" element={<HistoryPage />} />
         </Routes>
         <Footer />
-      </Router>
+      </Router> 
+
     </>
   )
 }
